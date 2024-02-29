@@ -5,6 +5,7 @@
 import { inject, onMounted, watch } from 'vue';
 
 const props = defineProps({ debug: Boolean });
+const values = inject('values');
 
 onMounted(() => {
 	const previewFrame = document.getElementById('frame')?.contentWindow;
@@ -27,8 +28,6 @@ onMounted(() => {
 			});
 		}
 	}
-
-	const values = inject('values');
 
 	watch(values, (val) => updateData(val));
 	updateData(values.value);
