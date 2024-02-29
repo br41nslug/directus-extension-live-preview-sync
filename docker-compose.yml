@@ -1,0 +1,23 @@
+version: '3.7'
+services:
+    directus:
+      image: directus/directus:10.9.3
+      ports:
+        - 8057:8055
+      volumes:
+        - './example/database:/directus/database'
+        - './:/directus/extensions/directus-extension-post-message-preview:/directus/extensions/directus-extension-post-message-preview'
+        - './example/directus-extension-example-preview:/directus/extensions/directus-extension-example-preview'
+      environment:
+        KEY: '25182053-7805-465c-bb97-0710daa6594f'
+        SECRET: '10bbb1e1-477b-4567-815a-83e0e03fadb5'
+        TELEMETRY: false
+        LOG_LEVEL: 'debug'
+        DB_CLIENT: "sqlite3"
+        DB_FILENAME: "/directus/database/data.db"
+
+        ADMIN_EMAIL: 'admin@example.com'
+        ADMIN_PASSWORD: 'd1r3ctu5'
+        
+        # EXTENSIONS_AUTO_RELOAD: true
+        CONTENT_SECURITY_POLICY_DIRECTIVES__SCRIPT_SRC: "'self' 'unsafe-eval' 'unsafe-inline'"        
