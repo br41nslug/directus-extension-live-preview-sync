@@ -7,7 +7,7 @@ import { inject, onMounted, watch } from 'vue';
 const props = defineProps({ debug: Boolean });
 
 onMounted(() => {
-	const previewFrame = document.getElementById('frame').contentWindow;
+	const previewFrame = document.getElementById('frame')?.contentWindow;
 	if (!previewFrame) {
 		console.warn('[Live Preview Sync] No live preview found on this page!');
 		return;
