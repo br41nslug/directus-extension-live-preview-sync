@@ -2,7 +2,7 @@
 
 An interface to push realtime updates to the live preview iframe.
 
-> Tested with Directus 10.9.3
+> Tested with Directus 10.10.4
 
 ## Usage
 
@@ -13,9 +13,9 @@ This extension pushes live value updates to the live preview iframe.
 Requirements:
 
 1. Set the Live Preview URL
-   ![Set the Live Preview URL](/example/images/set_live_preview_url.png)
+   ![Set the Live Preview URL](https://raw.githubusercontent.com/br41nslug/directus-extension-live-preview-sync/main/example/images/set_live_preview_url.png)
 2. Add the Live Preview Sync interface
-   ![Add Live Preview Sync interface](/example/images/add_interface.png)
+   ![Add Live Preview Sync interface](https://raw.githubusercontent.com/br41nslug/directus-extension-live-preview-sync/main/example/images/add_interface.png)
 
 #### Message Structure
 
@@ -43,7 +43,7 @@ window.addEventListener("message", (event) => {
 ## Examples
 
 **Included Example**
-![Example Demo](/example/images/demo_example.gif)
+![Example Demo](https://raw.githubusercontent.com/br41nslug/directus-extension-live-preview-sync/main/example/images/demo_example.gif)
 
 **Random Map Example**
-![Dynamic Map Demo](/example/images/dynamic_map_example.gif)
+![Dynamic Map Demo](https://raw.githubusercontent.com/br41nslug/directus-extension-live-preview-sync/main/example/images/dynamic_map_example.gif)

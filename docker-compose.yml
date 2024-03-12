@@ -1,7 +1,7 @@
 version: '3.7'
 services:
     directus:
-      image: directus/directus:10.9.3
+      image: directus/directus:10.10.4
       ports:
         - 8057:8055
       volumes:
