@@ -2,7 +2,7 @@
 	"name": "directus-extension-post-message-preview",
 	"description": "Live Preview form value synchronization",
 	"icon": "extension",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"keywords": [
 		"directus",
 		"directus-extension",
